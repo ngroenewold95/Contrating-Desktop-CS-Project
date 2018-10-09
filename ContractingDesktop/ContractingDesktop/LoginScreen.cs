@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace ContractingDesktop
 {
-    public partial class Login : Form
+    public partial class LoginScreen : Form
     {
-        public Login()
+        public LoginScreen()
         {
             InitializeComponent();
+        }
+
+        private void login_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var splash = new Splash();
+            splash.Closed += (s, args) => this.Close();
+            splash.Show();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace ContractingDesktop
 {
-    partial class Form1
+    partial class Splash
     {
         /// <summary>
         /// Required designer variable.

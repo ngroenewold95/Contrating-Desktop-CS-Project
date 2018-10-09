@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ContractingDesktop
 {
-    public partial class Form1 : Form
+    public partial class Splash : Form
     {
-        public Form1()
+        public Splash()
         {
             InitializeComponent();
         }

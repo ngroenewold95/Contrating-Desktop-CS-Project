@@ -29,105 +29,55 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.statusBox = new System.Windows.Forms.RichTextBox();
-            this.contractList = new System.Windows.Forms.ListView();
             this.newContract = new System.Windows.Forms.Button();
             this.searchBox = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.statusBox);
-            this.groupBox1.Controls.Add(this.contractList);
-            this.groupBox1.Location = new System.Drawing.Point(201, 119);
+            this.groupBox1.Location = new System.Drawing.Point(268, 153);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1034, 507);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(1379, 618);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
-            // 
-            // statusBox
-            // 
-            this.statusBox.BackColor = System.Drawing.Color.AliceBlue;
-            this.statusBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statusBox.Location = new System.Drawing.Point(0, 471);
-            this.statusBox.Name = "statusBox";
-            this.statusBox.Size = new System.Drawing.Size(1034, 27);
-            this.statusBox.TabIndex = 1;
-            this.statusBox.Text = "";
-            this.statusBox.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
-            // 
-            // contractList
-            // 
-            this.contractList.BackColor = System.Drawing.Color.AliceBlue;
-            this.contractList.Location = new System.Drawing.Point(0, 0);
-            this.contractList.Name = "contractList";
-            this.contractList.Size = new System.Drawing.Size(1034, 475);
-            this.contractList.TabIndex = 0;
-            this.contractList.UseCompatibleStateImageBehavior = false;
-            this.contractList.SelectedIndexChanged += new System.EventHandler(this.contractList_SelectedIndexChanged);
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // newContract
             // 
-            this.newContract.BackColor = System.Drawing.Color.Lavender;
-            this.newContract.Location = new System.Drawing.Point(1095, 73);
+            this.newContract.Location = new System.Drawing.Point(1460, 98);
+            this.newContract.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.newContract.Name = "newContract";
-            this.newContract.Size = new System.Drawing.Size(140, 38);
+            this.newContract.Size = new System.Drawing.Size(187, 47);
             this.newContract.TabIndex = 1;
             this.newContract.Text = "Add New Contract";
-            this.newContract.UseVisualStyleBackColor = false;
+            this.newContract.UseVisualStyleBackColor = true;
             this.newContract.Click += new System.EventHandler(this.button1_Click);
             // 
             // searchBox
             // 
-            this.searchBox.BackColor = System.Drawing.Color.Lavender;
             this.searchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchBox.Location = new System.Drawing.Point(201, 80);
+            this.searchBox.Location = new System.Drawing.Point(268, 107);
+            this.searchBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.searchBox.Name = "searchBox";
-            this.searchBox.Size = new System.Drawing.Size(338, 31);
+            this.searchBox.Size = new System.Drawing.Size(449, 37);
             this.searchBox.TabIndex = 2;
             this.searchBox.Text = "Search";
             this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.listBox1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 113);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(173, 507);
-            this.groupBox2.TabIndex = 3;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
-            // 
-            // listBox1
-            // 
-            this.listBox1.BackColor = System.Drawing.Color.AliceBlue;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(8, 6);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(165, 498);
-            this.listBox1.TabIndex = 0;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
-            // 
             // Splash
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.ClientSize = new System.Drawing.Size(1247, 638);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(1663, 785);
             this.Controls.Add(this.searchBox);
             this.Controls.Add(this.newContract);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Splash";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Splash_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,9 +88,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button newContract;
         private System.Windows.Forms.TextBox searchBox;
-        private System.Windows.Forms.ListView contractList;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.RichTextBox statusBox;
+
     }
 }

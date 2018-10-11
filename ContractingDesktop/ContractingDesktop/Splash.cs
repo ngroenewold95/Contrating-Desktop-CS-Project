@@ -19,10 +19,25 @@ namespace ContractingDesktop
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Console.WriteLine("Add contract");
         }
 
         private void searchBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contractList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

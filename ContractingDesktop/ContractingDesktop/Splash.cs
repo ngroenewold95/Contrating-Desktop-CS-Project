@@ -19,7 +19,8 @@ namespace ContractingDesktop
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("Add contract");
+            var splash = new AddContract();
+            splash.Show();
         }
 
         private void searchBox_TextChanged(object sender, EventArgs e)
@@ -38,6 +39,11 @@ namespace ContractingDesktop
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Splash_Load(object sender, EventArgs e)
         {
 
         }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ContractingDesktop
+namespace WindowsFormsApp1
 {
     static class Program
     {
@@ -16,7 +16,6 @@ namespace ContractingDesktop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginScreen());
             Application.Run(new Form1());
         }
     }

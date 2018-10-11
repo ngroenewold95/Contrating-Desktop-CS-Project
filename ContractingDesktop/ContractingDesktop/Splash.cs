@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace ContractingDesktop
 {
-    public partial class Login : Form
+    public partial class Splash : Form
     {
-        public Login()
+        public Splash()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void searchBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

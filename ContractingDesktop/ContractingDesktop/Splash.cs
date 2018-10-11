@@ -23,7 +23,6 @@ namespace ContractingDesktop
         private void button1_Click(object sender, EventArgs e)
         {
             var splash = new AddContract();
-            splash.Closed += (s, args) => this.Close();
             splash.Show();
 
         }

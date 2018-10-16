@@ -31,15 +31,15 @@ namespace ContractingDesktop
         {
             SqlDataAdapter adapter = new SqlDataAdapter();
             connect.Open();
-            adapter.InsertCommand = new SqlCommand("INSERT INTO CONTRACTORS (FirstName, LastName, Email) VALUES ('" + FirstText.Text + "','" + LastText.Text + "','" + EmailText.Text + "')", connect);
+            adapter.InsertCommand = new SqlCommand("INSERT INTO CONTRACTORS (FirstName, LastName, Email) VALUES ('" + FirstText.Text + "','" + LastText.Text + "','" + CityText.Text + "')", connect);
             adapter.InsertCommand.ExecuteNonQuery();
-            adapter.InsertCommand = new SqlCommand("INSERT INTO CLIENTS (ClientName) VALUES ('" + ClientText.Text + "')", connect);
+            adapter.InsertCommand = new SqlCommand("INSERT INTO CLIENTS (ClientName) VALUES ('" + ZipText.Text + "')", connect);
             adapter.InsertCommand.ExecuteNonQuery();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = connect;
             cmd.CommandText = "SELECT EmployeeID FROM CONTRACTORS WHERE FirstName = '" + FirstText.Text + "' and LastName = '" + LastText.Text + "'";
             int Emid = (int)cmd.ExecuteScalar();
-            cmd.CommandText = "SELECT ClientID FROM Clients WHERE ClientName = '" + ClientText.Text + "'";
+            cmd.CommandText = "SELECT ClientID FROM Clients WHERE ClientName = '" + ZipText.Text + "'";
             int Clid = (int)cmd.ExecuteScalar();
             adapter.InsertCommand = new SqlCommand("INSERT INTO CONTRACT (EmployeeID, ClientID) VALUES ('" + Emid.ToString() + "','" + Clid.ToString() + "')", connect);
             adapter.InsertCommand.ExecuteNonQuery();
